@@ -4,9 +4,9 @@ const commands = {
   visitHome() {
     cy.visit(baseUrl)
   },
-  logIn() {
-    cy.get('#user-name').type(users.primary.name)
-    cy.get('#password').type(users.primary.password)
+  logIn(data = {}) {
+    cy.get('#user-name').type(data.username || users.primary.name)
+    cy.get('#password').type(data.password || users.primary.password)
     cy.get('#login-button').click()
   },
 }

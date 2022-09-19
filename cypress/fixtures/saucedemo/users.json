@@ -4,6 +4,10 @@
       "name": "standard_user",
       "email": "test@cypress_template_test.com",
       "password": "secret_sauce"
+    },
+    "nonExisting": {
+      "name": "foo",
+      "password": "bar"
     }
   },
   "release": {
