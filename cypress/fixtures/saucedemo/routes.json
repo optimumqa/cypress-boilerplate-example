@@ -1,0 +1,11 @@
+{
+  "staging": {
+    "baseUrl": "https://www.saucedemo.com"
+  },
+  "release": {
+    "baseUrl": "https://www.saucedemo.com"
+  },
+  "production": {
+    "baseUrl": "https://www.saucedemo.com"
+  }
+}

@@ -7,10 +7,12 @@ import 'cypress-if'
 import 'cypress-iframe'
 
 // Hygen - ScriptsImport - Do not remove this comment
+import saucedemo from './saucedemo'
 
 // Hygen - Do not remove this comment and do not rename below object `productsCommands`
 const productsCommands = {
   ...{}, // Hygen - ObjectInsertion - Do not remove this line
+  saucedemo,
 }
 
 const getProductCommands = () => {

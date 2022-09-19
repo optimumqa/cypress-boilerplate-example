@@ -1,17 +1,22 @@
 {
-  "name": "cypress-multi-product-template",
+  "name": "cypress-boilerplate",
   "version": "0.0.1",
   "description": "Cypress boilerplate",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "saucedemo-staging": "cypress run -e product=saucedemo,env=staging",
+    "saucedemo-staging:open": "cypress open -e product=saucedemo,env=staging",
+    "saucedemo-release": "cypress run -e product=saucedemo,env=release",
+    "saucedemo-production": "cypress run -e product=saucedemo,env=production",
     "add-project": "hygen project with-prompt && prettier --write . >/dev/null",
     "clean-reports": "rm -rf cypress/reports && mkdir -p cypress/reports/mochareports",
     "pretest": "npm run clean-reports",
     "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
     "generate-report": "marge cypress/reports/mochareports/report.json -f index -o cypress/reports/mochareports/",
     "posttest": "npm run combine-reports && npm run generate-report && npm run add-cname",
-    "add-cname": "cp ./CNAME cypress/reports/mochareports/"
+    "add-cname": "cp ./CNAME cypress/reports/mochareports/",
+    "test": "npm run saucedemo-production"
   },
   "dependencies": {
     "cypress": "10.8.0",
