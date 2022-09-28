@@ -19,7 +19,7 @@
     "test": "npm run saucedemo-production"
   },
   "dependencies": {
-    "cypress": "10.8.0",
+    "cypress": "10.9.0",
     "cypress-if": "1.8.1",
     "cypress-iframe": "1.0.1",
     "cypress-localstorage-commands": "^2.0.0",
