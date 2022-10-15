@@ -1,12 +1,12 @@
 {
-  "name": "cypress-boilerplate",
+  "name": "cypress-boilerplate-example",
   "version": "0.0.1",
-  "description": "Cypress boilerplate",
+  "description": "Cypress boilerplate Example",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
     "saucedemo-staging": "cypress run -e product=saucedemo,env=staging",
-    "saucedemo-staging:open": "cypress open -e product=saucedemo,env=staging",
+    "saucedemo-staging.open": "cypress open -e product=saucedemo,env=staging",
     "saucedemo-release": "cypress run -e product=saucedemo,env=release",
     "saucedemo-production": "cypress run -e product=saucedemo,env=production",
     "add-project": "hygen project with-prompt && prettier --write . >/dev/null",
@@ -19,14 +19,15 @@
     "test": "npm run saucedemo-production"
   },
   "dependencies": {
-    "cypress": "10.8.0",
+    "cypress": "10.10.0",
     "cypress-if": "1.8.0",
     "cypress-iframe": "1.0.1",
     "cypress-localstorage-commands": "^2.0.0",
     "cypress-multi-reporters": "^1.6.0",
     "cypress-terminal-report": "^4.1.2",
     "@cypress-audit/lighthouse": "^1.3.1",
-    "@optimumqa/cypress-setup-utilities": "^1.4.0",
+    "@optimumqa/cypress-setup-utilities": "1.5.0",
+    "@optimumqa/cypress-store": "1.0.2",
     "mocha": "^10.0.0",
     "mochawesome": "^7.1.3",
     "mochawesome-merge": "^4.2.1",

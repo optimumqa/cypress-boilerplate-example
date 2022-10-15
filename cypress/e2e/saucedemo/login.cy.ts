@@ -13,7 +13,6 @@ describe('Login', () => {
       username: users.nonExisting.name,
       password: users.nonExisting.password,
     })
-
     cy.get('[data-test="error"]').should('be.visible')
   })
 })
