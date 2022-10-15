@@ -20,7 +20,7 @@
   },
   "dependencies": {
     "cypress": "10.10.0",
-    "cypress-if": "1.8.0",
+    "cypress-if": "1.9.2",
     "cypress-iframe": "1.0.1",
     "cypress-localstorage-commands": "^2.0.0",
     "cypress-multi-reporters": "^1.6.0",
