@@ -5,9 +5,9 @@
     "passes": 2,
     "pending": 0,
     "failures": 0,
-    "start": "2022-10-19T08:12:23.871Z",
-    "end": "2022-10-19T08:12:30.228Z",
-    "duration": 3041,
+    "start": "2022-10-28T21:48:17.410Z",
+    "end": "2022-10-28T21:48:23.473Z",
+    "duration": 2962,
     "testsRegistered": 2,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "090b843d-4cd5-4f8c-8c74-288c8ee5983b",
+      "uuid": "c530d83b-13af-4467-b0e8-7fac64e131e1",
       "title": "",
       "fullFile": "cypress/e2e/saucedemo/login.cy.ts",
       "file": "cypress/e2e/saucedemo/login.cy.ts",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "ba858358-4924-46bc-8e92-eb7c2ab34fcf",
+          "uuid": "3662e63a-4ab8-4c27-aa6b-055eacc2400e",
           "title": "Login",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should successfully log in",
               "fullTitle": "Login Should successfully log in",
               "timedOut": null,
-              "duration": 1830,
+              "duration": 1724,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.visitHome();\ncy.logIn();\ncy.url().should('include', '/inventory.html');",
               "err": {},
-              "uuid": "1f4cf9c8-724c-4ba4-a7cd-8ba6a34c0927",
-              "parentUUID": "ba858358-4924-46bc-8e92-eb7c2ab34fcf",
+              "uuid": "39118d5f-7463-4536-94c1-36dec50445bb",
+              "parentUUID": "3662e63a-4ab8-4c27-aa6b-055eacc2400e",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should not log in with non-existing user",
               "fullTitle": "Login Should not log in with non-existing user",
               "timedOut": null,
-              "duration": 1211,
+              "duration": 1238,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,21 +65,21 @@
               "context": null,
               "code": "cy.visitHome();\ncy.logIn({\n    username: _support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"users\"].nonExisting.name,\n    password: _support_helpers__WEBPACK_IMPORTED_MODULE_0__[\"users\"].nonExisting.password,\n});\ncy.get('[data-test=\"error\"]').should('be.visible');",
               "err": {},
-              "uuid": "1c88f8a0-0493-45a1-b88f-a428f9ea21d1",
-              "parentUUID": "ba858358-4924-46bc-8e92-eb7c2ab34fcf",
+              "uuid": "0458cd17-7e5e-4f08-8369-8ae4c263749c",
+              "parentUUID": "3662e63a-4ab8-4c27-aa6b-055eacc2400e",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1f4cf9c8-724c-4ba4-a7cd-8ba6a34c0927",
-            "1c88f8a0-0493-45a1-b88f-a428f9ea21d1"
+            "39118d5f-7463-4536-94c1-36dec50445bb",
+            "0458cd17-7e5e-4f08-8369-8ae4c263749c"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 3041,
+          "duration": 2962,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
